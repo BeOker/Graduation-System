@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/loginStyle.css" />
+		<title>毕业设计管理系统</title>
+	</head>
+
+	<body style="background-color: #f7fafc;">
+<!--logo&字头-->
+<div id="index-main"">
+		<div class="container-fluid" id="divAdapt">
+			<img src="img/logo.png" />
+			<img style="margin-left: 15px" id="imgAdapt" src="img/博洋行书.png">
+		</div>
+
+<!--左侧公告栏-->
+<!--canvas背景-->
+		<div id="particles"></div><!--canvas效果-->
+			<div class="container" id="logincontainer">
+				<div class="row">
+					
+    <!--选项卡组件-->
+					<div class="col-xs-12 col-sm-5 col-sm-offset-1" ><!--占据六格栅栏-->
+						<div>
+							<ul id="myTab" class="nav nav-pills" role="tablist">
+								<li class="active">
+									<a href="#bulletin" role="tab" data-toggle="pill">通知公告</a>
+								</li>
+								<li>
+									<a href="#tabulation" role="tab" data-toggle="pill">表格下载</a>
+								</li>
+							</ul>
+						</div>
+     <!-- 选项卡面板 -->
+						<div id="myTabContent" class="tab-content" style="text-align: left; padding: 15px;">
+							<div class="tab-pane fade in active" id="bulletin">
+								<a href="##"><p>关于做好2016届本科毕业设计（论文）后期工作的通知</p></a>
+								<a href="##"><p>关于做好2016届本科毕业设计（论文）后期工作的通知</p></a>
+								<a href="##"><p>关于做好2016届本科毕业设计（论文）后期工作的通知</p></a>
+								<a href="##"><p>关于做好2016届本科毕业设计（论文）后期工作的通知</p></a>
+							</div>
+							<div class="tab-pane fade" id="tabulation">
+								<a href="##"><p>本科生毕业设计（论文）答辩巡查情况记录表</p></a>
+								<a href="##"><p>本科生毕业设计（论文）答辩巡查情况记录表</p></a>
+								<a href="##"><p>本科生毕业设计（论文）答辩巡查情况记录表</p></a>
+								<a href="##"><p>本科生毕业设计（论文）答辩巡查情况记录表</p></a>
+							</div>
+						</div>
+					</div>
+ <!--右侧登录栏-->
+					<div class="col-xs-12 col-sm-4 col-sm-offset-1"><!--占据4格栅栏，向右偏移一格-->
+						<div class="panel panel-primary">
+							<div class="panel-heading" id="panelHeadFont"><span class="fa fa-users"></span>&nbsp;&nbsp;Login</div>
+							<div class="panel-body" id="Loginpanel">
+								<!--用户登录-->
+								<form role="form" name="login" id="login" action="##" method="post">
+									<div class="form-group">
+										<input type="text" class="form-control" id="InputAccount" placeholder="请输入您的账户">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="InputPassword" placeholder="请输入您的密码">
+									</div>		
+									<button type="submit" class="btn btn-primary">登录系统</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>         
+			</div> 
+			</div>
+		<div class="clearfix visible-xs-block"></div>
+				<div id="loginFooter">
+					<div class="container>
+						<div class="row">
+							<div class="col-sm-12">		
+				    <p>Copyright © 2016 许昌学院智慧大数据工作室. All rights reserved. </p>
+				</div>	
+				</div>
+				</div>
+				
+		<script src="js/jquery.min.js"></script>
+	<!--	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><!--引入jQuery库CDN-->
+		<script src="js/jquery.particleground.min.js"></script><!--引入背景canvas粒子	插件-->
+		<script src="js/bootstrap.min.js"></script>
+	<!--	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!--引入bootstrap js插件-->
+	</body>
+
+</html>

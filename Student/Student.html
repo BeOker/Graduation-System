@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="../css/homepageStyle.css" />
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../css/dataurl.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/metisMenu.min.css" />
+		<title>毕业设计管理系统</title>
+		<script>
+			$(function() {
+				$('#menu').metisMenu();
+			});
+		</script>
+	</head>
+
+	<body ng-app="myApp">
+		<header>
+			<!--顶栏logo&全响应设置-->
+			<nav class="navbar navbar-fixed-top navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<!--顶栏右侧内容全响应下拉设置-->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	                    	<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	               		</button>
+						<!--左侧导航栏全响应隐藏/显示设置-->
+						<button type="button" class="navbar-toggle show pull-left" data-toggle="collapse" data-target="sidebar">
+	                    	<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	                   </button>
+						<!--logo-->
+						<div style="float: left"><img src="../img/logo.png" height="50px" /></div>
+					</div>
+					<!--顶栏右侧内容-->
+					<div id="navbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<!--姓名-->
+							<li>
+								<a><span class="glyphicon glyphicon-user"></span>&nbsp;张三</a>
+							</li>
+							<!--身份-->
+							<li>
+								<a><span class="glyphicon glyphicon-map-marker"></span>&nbsp;学生</a>
+							</li>
+							<!--退出-->
+							<li>
+								<a href="../login.html"><span class="glyphicon glyphicon-log-out"></span>&nbsp;退出</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container-fluid all">
+			<!--左侧导航栏-->
+			<aside class="sidebar">
+				<nav class="sidebar-nav">
+					<ul class="metismenu" id="menu">
+						<li>
+							<a href="Javascript: void(0)" aria-expanded="false">
+								<span class=" fa fa-graduation-cap fa-lg"></span>
+								<span class="sidebar-nav-item">流程管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul aria-expanded="false" class="collapse">
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;申请指导老师
+									</a>
+								</li
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;课题申报
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;提交任务书
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;提交开题报告
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;提交中期检查
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;提交论文初稿
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;提交论文定稿
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;查看答辩安排
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;查询最终成绩
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="Javascript: void(0)" aria-expanded="false"><span class="fa fa-wrench fa-lg"></span></span>&nbsp;<span class="sidebar-nav-item">特殊情况处理</span><span class="fa arrow"></span></a>
+							<ul aria-expanded="false" class="collapse">
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;已审课题重申报
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;任务书重提交
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;开题报告重提交
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;中期报告重提交
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;论文初稿重提交
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;论文定稿重提交
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="Javascript: void(0)" aria-expanded="false"><span class="fa fa-key fa-lg"></span></span>&nbsp;<span class="sidebar-nav-item">账号管理</span> <span class="fa arrow"></span></a>
+							<ul aria-expanded="false" class="collapse">
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;修改密码
+									</a>
+								</li>
+								<li ui-sref="top1">
+									<a href="#">
+										<span class="fa fa-tag"></span>&nbsp;修改个人信息
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<div class="maincontent row">
+				<div class="col-sm-12">
+					<div data-ui-view>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
+		<!--回到顶部-->
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--jQuery库CDN-->
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<!--Angular.js库-->
+		<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<!--UI router库-->
+        <script src="../js/pace.min.js"></script>
+        <!--进度条效果-->
+		<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
+		<!--平滑滚动回顶部效果-->
+		<script type="text/javascript" src="../js/homepage.js"></script>
+		<!--[if lt IE 9]>
+        <script src="../js/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+        <![endif]-->
+		<script type="text/javascript" src="../js/metisMenu.min.js"></script>
+		<!--左侧菜单js-->
+		<script type="text/javascript" src="../js/UIRouter.js"></script>
+		<!--AngularJS 配置-->
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<!--bootstrap js插件-->
+	</body>
+
+</html>
