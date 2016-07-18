@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title> </title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<!--modal-->
+<div class="modal" id="phone_num">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">修改手机号</h4>
+			</div>
+				<div class="modal-body ">
+				<label>请输入你的手机号：</label>
+				<input class="form-control" type="text" placeholder="请输入手机号码" />
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">保存</button>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div class="modal" id="email">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">修改邮箱</h4>	
+			</div>
+			<div class="modal-body">
+					<label>请输入你的邮箱地址：</label>
+				<input class="form-control" type="text" placeholder="请输入邮箱地址" />
+			</div>
+			<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">保存</button>
+			</div>
+		</div>
+	</div>
+	
+</div>
+		<!--下面是代码任务部分-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-md-offset-1">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="fa fa-user"></span>&nbsp;&nbsp;修改个人信息</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<div class="row">
+									<div class="col-md-9 ">
+										<b>手机号：</b>
+										<h>1301551423</h>
+										<p class="help-block">填写常用的手机号方便老师与同学之间的通信。</p>
+
+									</div>
+									<div class="col-md-2 col-xs-offset-1">
+										<button data-toggle="modal" data-target="#phone_num" class="btn btn-default">修改</button>
+									</div>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="row">
+									<div class="col-md-9 ">
+										<b>邮箱：</b>
+										<h>1301551423@qq.com</h>
+										<p class="help-block">填写常用的邮箱地址方便老师与同学之间的通信。</p>
+
+									</div>
+									<div class="col-md-2 col-xs-offset-1">
+										<button data-toggle="modal" data-target="#email"  class="btn btn-default">修改</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

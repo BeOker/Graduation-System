@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<title></title>
+	</head>
+	<body>
+<div class="modal" id="modify_pwd" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4>修改密码</h4>
+			</div>
+			<div class="modal-body">
+				<dl>
+						<dt>原密码</dt>
+						<dd class="grpOldPass">
+							<label class="labelbox"><input class="oldPass" type="password" placeholder="输入原密码" autocomplete="off" disableautocomplete=""></label>
+							<!-- 错误信息提示 -->
+							<div class="wng_pwd err_tip err_tip_independ" style="display:none;" _text="原密码不正确">原密码不正确</div>
+							<div class="empty_pwd err_tip err_tip_independ" style="display:none;" _text="原密码不能为空">原密码不能为空</div>
+						</dd>
+						<dt>新密码</dt>
+						<dd class="grpNewPass">
+							<label class="labelbox"><input class="newPass" type="password" placeholder="输入新密码" autocomplete="off" disableautocomplete=""></label>
+							<label class="labelbox" ><input class="newPass2" type="password" placeholder="重复新密码" autocomplete="off" disableautocomplete=""></label>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="pwd_mismatch err_tip_independ err_tip" style="display:none;" _text="两次输入的新密码不一致">两次输入的新密码不一致</div>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="empty_pwd err_tip_independ err_tip" style="display:none;" _text="新密码不能为空">新密码不能为空</div>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="empty_pwd2 err_tip_independ err_tip" style="display:none;" _text="请重复新密码">请重复新密码</div>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="pwd_fmt err_tip_independ err_tip" style="display:none;" _text="密码长度8~16位，其中数字，字母和符号至少包含两种">密码长度8~16位，其中数字，字母和符号至少包含两种</div>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="same_pwd err_tip_independ err_tip" style="display:none;" _text="不能与原密码相同">不能与原密码相同</div>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="too_much err_tip_independ err_tip" style="display:none;" _text="您的操作频率过快，请稍后再试。">您的操作频率过快，请稍后再试。</div>
+							<!-- 错误信息显示时隐藏 -->
+							<div class="eq_email err_tip_independ err_tip" style="display:none;" _text="密码不能与邮箱相同">密码不能与邮箱相同</div>
+							<div class="pwd_in_black err_tip_independ err_tip" style="display:none;" _text="您的密码可能存在安全风险，请您重新设置一个全新的密码">您的密码可能存在安全风险，请您重新设置一个全新的密码</div>
+              <div class="repwd_format_error err_tip_independ err_tip" style="display:none;" _text="新密码格式错误">新密码格式错误</div>
+							<!-- 错误信息提示去掉class=txt_tip -->
+							<div class="txt_tip" _text="密码长度8~16位，其中数字，字母和符号至少包含两种">密码长度8~16位，其中数字，字母和符号至少包含两种</div>		
+
+							<div style="display:none;" class="sys_err err_tip err_tip_independ" _text="系统错误。错误码：">系统错误。错误码：<span class="err_code"></span></div>						
+						</dd>
+						<!--3次后弹出-->
+						<dl class="capt_box" style="display: block;">
+							<span></span>
+							<dt>验证码</dt>
+							<dd class="inputcode">
+								<label class="labelbox chkcode"><input type="text" placeholder="输入验证码" autocomplete="off" disableautocomplete=""></label>
+								<img class="chkcode_img" alt="" src="/pass/getCode?icodeType=antispam&amp;0.12826367686940576&amp;_t=1468825786553">
+								<a href="" title="换一张" class="next_capt hidden">换一张</a>
+							</dd>
+							<div style="display:none;" class="wng_capt err_tip err_tip_independ" _text="验证码不正确，请重新输入">验证码不正确，请重新输入</div>
+							<div style="display:none;" class="empty_capt err_tip err_tip_independ" _text="验证码不能为空">验证码不能为空</div>
+						</dl>
+					</dl>				
+				</div>
+					<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">保存</button>
+			</div>
+			</div>		
+		</div>
+	</div>
+
+
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--引入jQuery库CDN-->
+		<!--<script src="js/homepage.js"></script>-->
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<!--引入Angular.js库-->
+		<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<!--引入UI router库-->
+		<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
+		<!--引入平滑滚动回顶部效果-->
+		<script src="../js/homepage.js"></script>
+		
+		<script type="text/javascript" src="js/UIRouter.js"></script>
+		<script src="../js/angular-ui-router.js"></script>
+	</body>
+</html>
