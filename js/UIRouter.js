@@ -7,7 +7,7 @@ var myApp = angular.module("myApp", ['ui.router']);
 	     $stateProvider
 	        .state("top1", {
 	            url: "/top1",
-	            templateUrl: "top1.html"
+	            templateUrl: "../top1.html"
 	        })
 	        .state("top2", {
 	            url:"/top2",
