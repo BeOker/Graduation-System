@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link href="../css/daterangepicker.css" rel="stylesheet" />
+		<title></title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row" style="margin-top: 50px;margin-left: 0px;margin-right: 0px;">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><span class="fa fa-calendar"></span>&nbsp;&nbsp;截止日期设置</div>
+						<div class="panel-body">
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>选择指导老师日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="teacherTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="teacherTime" class="form-control" name="inputDate"/>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" id="teacherStartTime">未设置</label>
+												<label class="label label-success" id="teacherEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>课题申报日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="projectTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="projectTime" class="form-control" name="inputDate" />
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" id="projectStartTime">未设置</label>
+												<label class="label label-success" id="projectEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>提交任务书日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="taskTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="taskTime" class="form-control" />
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" id="taskStartTime">未设置</label>
+												<label class="label label-success" id="taskEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>提交开题报告日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="openBookTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="openBookTime" class="form-control" />
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" id="openBookStartTime">未设置</label>
+												<label class="label label-success" id="openBookEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>提交中期检查日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="midTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="midTime" class="form-control" />
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" id="midStartTime">未设置</label>
+												<label class="label label-success" id="midEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>提交论文初稿日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="firstTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="firstTime" class="form-control" />
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" id="firstStartTime">未设置</label>
+												<label class="label label-success" id="firstEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" method="post" action="##">
+							<div class="page-header">
+								<h3>提交论文定稿日期：</h3>
+							</div>
+							<div class="row" id="plug-DateRangePicker">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="finalTime" class="col-sm-2 control-label">选择日期:</label>
+										<div class="col-sm-10">
+											<input type="text" id="finalTime" class="form-control" />
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结果:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">
+												<label class="label label-success" name="finalStartTime">未设置</label>
+												<label class="label label-success" name="finalEndTime">未设置</label>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="../js/moment-with-locales.min.js"></script>
+		<script src="../js/daterangepicker.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#teacherTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#teacherStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#teacherEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#teacherTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+			$(function() {
+				$('#projectTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#projectStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#projectEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#projectTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+			$(function() {
+				$('#taskTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#taskStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#taskEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#taskTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+			$(function() {
+				$('#openBookTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#openBookStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#openBookEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#openBookTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+			$(function() {
+				$('#midTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#midStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#midEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#midTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+			$(function() {
+				$('#firstTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#firstStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#firstEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#firstTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+			$(function() {
+				$('#finalTime').daterangepicker({
+					timePicker: true,
+					timePickerIncrement: 1,
+					locale: {
+						format: 'YYYY/MM/DD hh:mm:ss a'
+					},
+				}, function(start, end, label) {
+					$("#finalStartTime").html(start.format('YYYY/MM/DD hh:mm:ss a'));
+					$("#finalEndTime").html(end.format('YYYY/MM/DD hh:mm:ss a'));
+				});
+				//对中文的支持
+				$('#finalTime').data('daterangepicker').updateMomentLocale('zh-cn');
+			});
+		</script>
+	</body>
+
+</html>

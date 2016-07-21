@@ -5,11 +5,18 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<!--my_css  ↓↓↓↓-->
 		<link rel="stylesheet" href="../css/homepageStyle.css" />
-		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="../css/dataurl.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/dataurl.css" />
 		<link rel="stylesheet" href="../css/metisMenu.min.css" />
+		<!--my_css  ↑↑↑↑-->
+		
+		<!--CDN_CSS ↓↓↓↓-->
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+		<!--CDN_CSS ↑↑↑↑-->
+
 		<title>毕业设计管理系统</title>
 		<script>
 			$(function() {
@@ -79,48 +86,48 @@
 								<span class="fa arrow"></span>
 							</a>
 							<ul aria-expanded="false" class="collapse">
-								<li >
+								<li>
 									<a ui-sref="stu_info">
 										<span class="fa fa-tag"></span>&nbsp;查看学生信息
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="check_stu_req">
 										<span class="fa fa-tag"></span>&nbsp;审核学生课题申报
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="check_stu_task">
 										<span class="fa fa-tag"></span>&nbsp;审阅任务书
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="check_opening_report">
 										<span class="fa fa-tag"></span>&nbsp;审阅开题报告
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="check_mid_paper">
 										<span class="fa fa-tag"></span>&nbsp;审阅中期检查
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="check_paper_draft">
 										<span class="fa fa-tag"></span>&nbsp;审阅论文初稿
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="check_paper_final">
 										<span class="fa fa-tag"></span>&nbsp;审阅论文定稿
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;优秀指导教师申请
 									</a>
 								</li>
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="good_paper_up">
 										<span class="fa fa-tag"></span>&nbsp;优秀论文推荐
 									</a>
 								</li>
@@ -129,37 +136,37 @@
 						<li>
 							<a href="Javascript: void(0)" aria-expanded="false"><span class="fa fa-wrench fa-lg"></span></span>&nbsp;<span class="sidebar-nav-item">特殊情况处理</span><span class="fa arrow"></span></a>
 							<ul aria-expanded="false" class="collapse">
-								<li >
-									<a ui-sref="top1">
+								<li>
+									<a ui-sref="modify_date">
 										<span class="fa fa-tag"></span>&nbsp;截止时间延期
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;已审课题重审核
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;任务书重审阅
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;开题报告重审阅
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;中期检查重审阅
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;论文初稿重审阅
 									</a>
 								</li>
-								<li >
+								<li>
 									<a ui-sref="top1">
 										<span class="fa fa-tag"></span>&nbsp;论文定稿重审阅
 									</a>
@@ -169,14 +176,13 @@
 						<li>
 							<a href="Javascript: void(0)" aria-expanded="false"><span class="fa fa-key fa-lg"></span></span>&nbsp;<span class="sidebar-nav-item">账号管理</span> <span class="fa arrow"></span></a>
 							<ul aria-expanded="false" class="collapse">
-								<li >
+								<li>
 									<a ui-sref="modify_pwd">
 										<span class="fa fa-tag"></span>&nbsp;修改密码
 									</a>
-									
-									
+
 								</li>
-								<li >
+								<li>
 									<a ui-sref="modify_per_info">
 										<span class="fa fa-tag"></span>&nbsp;修改个人信息
 									</a>
@@ -186,6 +192,7 @@
 					</ul>
 				</nav>
 			</aside>
+
 			<div class="maincontent row">
 				<div class="col-sm-12">
 					<div data-ui-view>
@@ -195,14 +202,14 @@
 		</div>
 		<a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
 		<!--回到顶部-->
-		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 		<!--jQuery库CDN-->
 		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
 		<!--Angular.js库-->
 		<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 		<!--UI router库-->
-        <script src="../js/pace.min.js"></script>
-        <!--进度条效果-->
+		<script src="../js/pace.min.js"></script>
+		<!--进度条效果-->
 		<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
 		<!--平滑滚动回顶部效果-->
 		<script type="text/javascript" src="../js/homepage.js"></script>

@@ -2,14 +2,21 @@
 <html>
 
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+			<!--CDN_CSS ↓↓↓↓-->
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+		<!--CDN_CSS ↑↑↑↑-->
 		<title> </title>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
 	</head>
 
 	<body>
 		<!--modal-->
-<div class="modal" id="phone_num">
+	<form action="">
+		<div class="modal" id="phone_num">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -22,12 +29,14 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<button type="button" class="btn btn-primary">保存</button>
+				<button type="submit" class="btn btn-primary">保存</button>
 			</div>
 		</div>
 	</div>
 	
 </div>
+</form>
+<form>
 <div class="modal" id="email">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -47,10 +56,10 @@
 	</div>
 	
 </div>
+</form>
 		<!--下面是代码任务部分-->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7 col-md-offset-1">
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-10 col-md-offset-1">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<span class="fa fa-user"></span>&nbsp;&nbsp;修改个人信息</div>
@@ -77,7 +86,7 @@
 
 									</div>
 									<div class="col-md-2 col-xs-offset-1">
-										<button data-toggle="modal" data-target="#email"  class="btn btn-default">修改</button>
+										<button data-toggle="modal" data-target="#email" class="btn btn-default">修改</button>
 									</div>
 								</div>
 							</li>
@@ -86,9 +95,6 @@
 				</div>
 			</div>
 		</div>
-
-		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</body>
 
 </html>

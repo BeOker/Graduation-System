@@ -1,0 +1,739 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <!--jquery库-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap库-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/bootstrap/html5shiv.min.js"></script>
+      <script src="js/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <!--font-awesome字体库-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!--页面加载进度条-->
+    <link href="css/pace/dataurl.css" rel="stylesheet" />
+    <script src="js/pace/pace.min.js"></script>
+    <!--平滑滚动到顶部库-->
+    <script src="js/jquery.scrolltopcontrol/scrolltopcontrol.js" type="text/javascript"></script>
+    <!--主要写的jquery拓展方法-->
+    <script src="js/jquery.extend.js" type="text/javascript"></script>
+    <!--主要写的css代码-->
+    <link href="css/default.css" rel="stylesheet" type="text/css" />
+    <!--主要写的js代码-->
+    <script src="js/default.js" type="text/javascript"></script>
+    <!--百度统计代码-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?2e8951f59909796d248b68fae4574b44";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle show pull-left" data-target="sidebar">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bootstrap</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="top1.html">top1.html</a></li>
+                    <li><a href="top2.html">top2.html</a></li>
+                    <li><a href="top3.html">top3.html</a></li>
+                    <li><a href="https://github.com/shihao316558512/bootstrap" target="_blank"><i class="fa fa-download fa-fw"></i>&nbsp;原码下载</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false"><i class="fa fa-user fa-fw"></i>&nbsp;小王&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="top-right1.html">top-right1.html</a></li>
+                            <li class="divider"></li>
+                            <li><a href="top-right2.html">top-right2.html</a></li>
+                            <li class="divider"></li>
+                            <li><a href="top-right3.html"><i class="fa fa-sign-out fa-fw"></i>&nbsp;top-right3.html</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid all">
+        <div class="sidebar">
+            <ul class="nav">
+                <li><a href="index.html">主页面</a></li>
+                <li><a href="plugs.html">插件库</a></li>
+                <li><a href="uis.html">UI库</a></li>
+                <li class="has-sub">
+                    <a href="javascript:void(0);"><span>测试页面</span><i class="fa fa-caret-right fa-fw pull-right"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="left1.html"><i class="fa fa-circle-o fa-fw"></i>&nbsp;left1</a></li>
+                        <li><a href="left2.html"><i class="fa fa-circle-o fa-fw"></i>&nbsp;left2</a></li>
+                        <li><a href="left3.html"><i class="fa fa-circle-o fa-fw"></i>&nbsp;left3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="maincontent row form-horizontal">
+            <!--我是主要内容 start-->
+            <ul class="breadcrumb">
+                <li class="active">插件库</li>
+            </ul>
+            <div class="col-sm-12">
+                <!--日期选择插件data-picker start-->
+                <div class="row" id="plug-datepicker">
+                    <div class="page-header text-center">
+                        <h2>bootstrap日期选择插件</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    bootstrap-datepicker
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://eternicode.github.io/bootstrap-datepicker/" class="btn btn-info" target="_blank">http://eternicode.github.io/bootstrap-datepicker/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">
+                                    该插件依赖bootstrap库
+                                </p>
+                                <p class="form-control-static">
+                                    如果弹框的位置有偏差，则可以做略微的调整就行。例如：父级margin-top:50px;，则设置.datepicker { margin-top: 50px; }
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.datepicker/bootstrap-datepicker3.min.css" rel="stylesheet" />
+                    <script src="js/bootstrap.datepicker/js/bootstrap-datepicker.min.js"></script>
+                    <script src="js/bootstrap.datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+                    <script src="js/bootstrap.datepicker/locales/bootstrap-datepicker.ja.min.js"></script>
+                    <style>
+                        /*注意：如果位置有偏差，则做相应的调整*/
+                        .datepicker { margin-top: 50px; }
+                    </style>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('.sandbox-container:eq(0) input').datepicker({
+                                format: "yyyy/mm/dd",
+                                language: "zh-CN"
+                            });
+                            $('.sandbox-container:eq(1) .input-group.date').datepicker({
+                                format: "yyyy/mm/dd",
+                                language: "ja"
+                            });
+                            $('.sandbox-container:eq(2) .input-daterange').datepicker({
+                                format: "yyyy/mm/dd"
+                            });
+                        })
+                    </script>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">中文效果</label>
+                            <div class="col-sm-11 sandbox-container">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">日文效果</label>
+                            <div class="col-sm-11 sandbox-container">
+                                <div class="input-group date">
+                                    <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">范围效果</label>
+                            <div class="col-sm-11 sandbox-container">
+                                <div class="input-daterange input-group">
+                                    <input type="text" class="form-control" name="start" />
+                                    <span class="input-group-addon">to</span>
+                                    <input type="text" class="form-control" name="end" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--日期选择插件data-picker end-->
+                <!--日期及时间范围选择插件DateRangePicker start-->
+                <div class="row" id="plug-DateRangePicker">
+                    <div class="page-header text-center">
+                        <h2>bootstrap日期及时间范围选择插件</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Bootstrap Date Range Picker
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://www.daterangepicker.com/" class="btn btn-info" target="_blank">http://www.daterangepicker.com/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖bootstrap库和font-awesome库</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.DateRangePicker/daterangepicker.css" rel="stylesheet" />
+                    <!--引用多语言版本-->
+                    <script src="js/bootstrap.DateRangePicker/moment-with-locales.min.js"></script>
+                    <script src="js/bootstrap.DateRangePicker/daterangepicker.js"></script>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#tbTime').daterangepicker({
+                                timePicker: true,
+                                timePickerIncrement: 1,
+                                locale: {
+                                    format: 'YYYY/MM/DD hh:mm:ss'
+                                },
+                                startDate: $("#lbStartTime").html(),
+                                endDate: $("#lbEndTime").html()
+                            }, function (start, end, label) {
+                                $("#lbStartTime").html(start.format('YYYY/MM/DD hh:mm:ss'));
+                                $("#lbEndTime").html(end.format('YYYY/MM/DD hh:mm:ss'));
+                            });
+                            //对中文的支持
+                            $('#tbTime').data('daterangepicker').updateMomentLocale('zh-cn');
+                        });
+                    </script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="tbTime" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">结果</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    <label class="label label-danger" id="lbStartTime">2016/04/19</label>
+                                    <label class="label label-danger" id="lbEndTime">2016/05/19</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--日期及时间范围范围选择插件DateRangePicker end-->
+                <!--日期时间选择插件datetimepicker start-->
+                <div class="row" id="plug-datetimepicker">
+                    <div class="page-header text-center">
+                        <h2>bootstrap日期时间选择插件</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Bootstrap 3 Datepicker
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://eonasdan.github.io/bootstrap-datetimepicker/" class="btn btn-info" target="_blank">http://eonasdan.github.io/bootstrap-datetimepicker/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">
+                                    该插件依赖bootstrap库
+                                </p>
+                                <p class="form-control-static">
+                                    部分涉及时间格式的功能依赖moment.js
+                                </p>
+                                <p class="form-control-static">
+                                    多说一句：moment-with-locales.min.js支持中文了，详细信息参考官网
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+                    <script src="js/bootstrap.datetimepicker/bootstrap-datetimepicker.min.js"></script>
+                    <style>
+                        /*这里为了解决上面插件定义的样式污染的问题*/
+                        #plug-datetimepicker .datepicker { margin-top: auto; }
+                    </style>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker1').datetimepicker();
+                            //这里的函数用到了moment.js，因为前面插件已经引用进去了，所以不再引用。
+                            //否则是需要引用moment.js的。
+                            $('#datetimepicker3').datetimepicker({
+                                format: 'LT'
+                            });
+                        });
+                    </script>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker3'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--日期时间选择插件datetimepicker end-->
+                <!--通知插件toastr start-->
+                <div class="row" id="plug-toastr">
+                    <div class="page-header text-center">
+                        <h2>通知插件1</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Toastr
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://codeseven.github.io/toastr/" class="btn btn-info" target="_blank">http://codeseven.github.io/toastr/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖jquery库</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/jquery.toastr/toastr.min.css" rel="stylesheet" />
+                    <script src="js/jquery.toastr/toastr.min.js"></script>
+                    <style>
+                        .toast-top-right { top: 62px; }
+                    </style>
+                    <script>
+                        $(function () {
+                            $("#btnShowMsg1").click(function () {
+                                toastr.options = {
+                                    "progressBar": true
+                                }
+                                toastr.info('Are you the 6 fingered man?');
+                            })
+                        })
+                    </script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <a class="btn btn-info" id="btnShowMsg1">点我</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--通知插件toastr end-->
+                <!--通知插件sweetalert start-->
+                <div class="row" id="plug-sweetalert">
+                    <div class="page-header text-center">
+                        <h2>通知插件2</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    SweetAlert for Bootstrap
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="https://lipis.github.io/bootstrap-sweetalert/" class="btn btn-info" target="_blank">https://lipis.github.io/bootstrap-sweetalert/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖bootstrap库</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.sweetalert/sweet-alert.css" rel="stylesheet" />
+                    <script src="js/bootstrap.sweetalert/sweet-alert.min.js"></script>
+                    <script>
+                        $(function () {
+                            $("#btnShowMsg2").click(function () {
+                                swal("Here's a message!");
+                            })
+                        })
+                    </script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <a class="btn btn-info" id="btnShowMsg2">点我</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--通知插件sweetalert end-->
+                <!--选色插件colorpicker start-->
+                <div class="row" id="plug-colorpicker">
+                    <div class="page-header text-center">
+                        <h2>bootstrap选色插件</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Bootstrap Colorpicker
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="https://mjolnic.com/bootstrap-colorpicker/" class="btn btn-info" target="_blank">https://mjolnic.com/bootstrap-colorpicker/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖bootstrap库</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+                    <script src="js/bootstrap.colorpicker/bootstrap-colorpicker.min.js"></script>
+                    <script>
+                        $(function () {
+                            $('#cp2').colorpicker({
+                                format: "hex"
+                            });
+                        });
+                    </script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <div id="cp2" class="input-group colorpicker-component">
+                                    <input type="text" value="#00AABB" class="form-control" />
+                                    <span class="input-group-addon"><i></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--选择插件colorpicker end-->
+                <!--开关插件switch start-->
+                <div class="row" id="plug-switch">
+                    <div class="page-header text-center">
+                        <h2>bootstrap开关插件</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Bootstrap Switch
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://www.bootstrap-switch.org/" class="btn btn-info" target="_blank">http://www.bootstrap-switch.org/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖jquery库</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.switch/bootstrap-switch.min.css" rel="stylesheet" />
+                    <script src="js/bootstrap.switch/bootstrap-switch.min.js"></script>
+                    <script>
+                        $(function () {
+                            //插件初始化
+                            $("[name='my-checkbox']").bootstrapSwitch();
+                            $("[name='my-checkbox1']").bootstrapSwitch();
+                            //下面是事件捕获的用法
+                            $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function (event, state) {
+                                console.log(this); // DOM element
+                                console.log(event); // jQuery event
+                                console.log(state); // true | false
+                            });
+                        });
+                    </script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <input type="checkbox" name="my-checkbox" checked>
+                                <input type="checkbox" data-size="small" name="my-checkbox1" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--开关插件switch end-->
+                <!--formhelper start-->
+                <div class="row" id="plug-formhelper">
+                    <div class="page-header text-center">
+                        <h2>Bootstrap Form Helper 插件集合</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Bootstrap Form Helper
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://bootstrapformhelpers.com/" class="btn btn-info" target="_blank">http://bootstrapformhelpers.com/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖bootstrap库</p>
+                                <p class="form-control-static">注意：Number Input使用的时候必须放在form中才能初始化，如果页面没有form，则没法初始化插件（也就是看着没效果）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <link href="css/bootstrap.formhelper/css/bootstrap-formhelpers.min.css" rel="stylesheet" />
+                    <script src="js/bootstrap.formhelper/bootstrap-formhelpers.min.js"></script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="bfh-timepicker">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <form>
+                                            <input type="text" class="form-control bfh-number" value='0'>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--formhelper end-->
+                <!--tab drop start-->
+                <div id="plug-tabdrop" class="row" style="padding-bottom: 150px; ">
+                    <div class="page-header text-center">
+                        <h2>bootstrap-tab超出自动折叠插件</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">插件名</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">
+                                    Tab drop for Bootstrap <small>bootstrap-tabdrop.js</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">官网</label>
+                            <div class="col-sm-10">
+                                <a href="http://www.eyecon.ro/bootstrap-tabdrop/" class="btn btn-info" target="_blank">http://www.eyecon.ro/bootstrap-tabdrop/</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">特殊说明</label>
+                            <div class="col-sm-11">
+                                <p class="form-control-static">该插件依赖bootstrap库</p>
+                            </div>
+                        </div>
+                    </div>
+                    <link href="css/bootstrap.tabdrop/tabdrop.css" rel="stylesheet" />
+                    <script src="js/bootstrap.tabdrop/bootstrap-tabdrop.js"></script>
+                    <script>
+                        $(function () {
+                            $('.nav-tabs').eq(0).tabdrop();
+                            $('.nav-tabs').eq(1).tabdrop({ text: '<i class="fa fa-align-justify"></i>' });
+                        })
+                    </script>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">使用效果</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                            <li role="presentation"><a href="#settings1" aria-controls="settings1" role="tab" data-toggle="tab">Settings1</a></li>
+                                            <li role="presentation"><a href="#settings2" aria-controls="settings2" role="tab" data-toggle="tab">Settings2</a></li>
+                                            <li role="presentation"><a href="#settings3" aria-controls="settings3" role="tab" data-toggle="tab">Settings3</a></li>
+                                            <li role="presentation"><a href="#settings4" aria-controls="settings4" role="tab" data-toggle="tab">Settings4</a></li>
+                                            <li role="presentation"><a href="#settings5" aria-controls="settings5" role="tab" data-toggle="tab">Settings5</a></li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="home">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings1">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings2">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings3">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings4">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings5">...</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                            <li role="presentation"><a href="#settings1" aria-controls="settings1" role="tab" data-toggle="tab">Settings1</a></li>
+                                            <li role="presentation"><a href="#settings2" aria-controls="settings2" role="tab" data-toggle="tab">Settings2</a></li>
+                                            <li role="presentation"><a href="#settings3" aria-controls="settings3" role="tab" data-toggle="tab">Settings3</a></li>
+                                            <li role="presentation"><a href="#settings4" aria-controls="settings4" role="tab" data-toggle="tab">Settings4</a></li>
+                                            <li role="presentation"><a href="#settings5" aria-controls="settings5" role="tab" data-toggle="tab">Settings5</a></li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="home">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings1">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings2">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings3">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings4">...</div>
+                                            <div role="tabpanel" class="tab-pane" id="settings5">...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--tab drop end-->
+            </div>
+            <!--我是主要内容 end-->
+        </div>
+    </div>
+    <a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
+    <a href="https://github.com/shihao316558512">
+        <img class="forkme" src="image/forkme.png" alt="Fork me on GitHub">
+    </a>
+</body>
+</html>

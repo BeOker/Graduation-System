@@ -71,13 +71,10 @@ var pageInitModule = (function(mod) {
 			}
 		});
 
-		$("ul.collapse > li > a").click(function() {
-			$(this).parent().addClass("active");
-			$(function() {
-				$('body html').pace();
-			});
-			$(this).parent().siblings().removeClass("active");
-			$(this).parent().parent().parent().siblings().find("li").removeClass("active");
+		$("ul.collapse > li").click(function() {
+			$(this).addClass("active");
+			$(this).siblings().removeClass("active");
+			$(this).parent().parent().siblings().find("li").removeClass("active");
 			
 		})
 
