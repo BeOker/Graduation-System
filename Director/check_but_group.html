@@ -1,9 +1,93 @@
-<!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
 		<title></title>
 	</head>
-	<body>
+
+	<body style="font-family: '微软雅黑'; font-size: 17px;">
+		<div class="container col-md-offset-1">
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-10">
+				<div class="panel panel-primary">
+					<div class="panel-body">
+						<form role="form" class="form-inline">
+							<div class="form-group">
+							<label>答辩组名：</label>
+							<input type="text" name="defendName" class="form-control" />
+						    </div>
+						    <div class="form-group">
+							<label>答辩组组长姓名：</label>
+							<input type="text" name="grounpLeaderName" class="form-control" />
+						    </div>
+							<button class="btn btn-primary" type="submit">查询</button>
+						</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10">
+					<form role="form" action="##" method="post">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<span class="fa fa-check-square-o"></span>&nbsp;&nbsp;答辩组安排
+							</div>
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped table-hover" style="text-align: center;">
+									<thead>
+										<tr>
+											<td>组名</td>
+											<td>答辩组组长</td>
+											<td>答辩组成员</td>
+											<td>答辩秘书</td>
+											<td>答辩组学生</td>
+											<td>答辩日期</td>
+											<td>答辩地点</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>								
+											<td>1</td>
+											<td>张三</td>
+											<td>赵四，老王</td>
+											<td>张伟</td>
+											<td><a href="">20</a></td>											
+											<td>2016年7月20日</td>
+											<td>C3-204</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>张三</td>
+											<td>赵四，老王</td>
+											<td>张伟</td>
+											<td><a href="">20</a></td>											
+											<td>2016年7月20日</td>
+											<td>C3-204</td>
+										</tr>
+										<tr>	
+											<td>1</td>
+											<td>张三</td>
+											<td>赵四，老王</td>
+											<td>张伟</td>
+											<td><a href="">20</a></td>											
+											<td>2016年7月20日</td>
+											<td>C3-204</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-primary" type="submit">导出</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
+
 </html>

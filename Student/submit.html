@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<title></title>
+		<style type="text/css">
+			tbody tr {
+				line-height: 50px;
+			}
+		</style>
+	</head>
+
+	<body style="font-family: '微软雅黑'; font-size: 17px;">
+		<div class="container" style="margin-top: 50px;">
+			<div class="row">
+				<div class="col-md-9 col-md-offset-1">
+					<div class="panel panel-primary">
+						<div class="panel-heading"><span class="fa fa-edit"></span>&nbsp;&nbsp;任务书：未提交</div>
+						<form method="post" enctype="multipart/form-data">
+							<div class="panel-body">
+								<table cellspacing="20">
+									<tbody>
+										<tr>
+											<th>学生：</th>
+											<td>张三</td>
+										</tr>
+										<tr>
+											<th>提交时间：</th>
+											<td>2016年7月20日 下午10：09</td>
+										</tr>
+										<tr>
+											<th>截止时间：</th>
+											<td>2016年7月30日 下午23：00</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="alert alert-info" role="alert" style="margin-top: 15px;">
+									<strong>注意事项：</strong>
+									<p>（1）创建数据库，将学院代码做为数据，创建文件。</p>
+									<p>（2）编写程序，读取数据库中的数据信息，写入自定义的学院代码类。</p>
+									<p>（3）编写测试类，显示学院代码对象的内容。</p>
+								</div>
+								<div style="margin-bottom: 20px;">
+									<label>已上传附件:</label>
+									<span>任务书.doc</span>
+								</div>
+								<div>
+									<label>上传附件:</label>
+									<input type="file" name="submitFile" />
+								</div>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-primary" type="submit">提交</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button type="reset" class="btn btn-default">撤销</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

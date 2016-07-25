@@ -5,6 +5,8 @@ body {
 	/*ie-scrollbar*/
 	overflow-x: hidden;
 	/* Prevent scroll on narrow devices */
+	background-image:url(../img/bgimg.png);
+	background-repeat: repeat;
 }
 .navbar{
 	margin-bottom: 10px !important;

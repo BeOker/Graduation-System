@@ -1,0 +1,160 @@
+<html><head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+		<title></title>
+	</head>
+
+	<body style="font-family: '微软雅黑'; font-size: 17px;">
+		<div class="container">
+		<div class="row" style="margin-top: 50px;margin-left: 0px;margin-right: 0px;">
+			<div class="panel panel-primary">
+				<div class="panel-body">
+					<form role="form" class="form-inline">
+						<div class="row">
+							<div class="alert alert-info" role="alert">
+							<h4>批量设置权重：（评分权重未设置时，默认指导教师评分占0.25，评阅评分占0.25，答辩评分占0.5）</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label class="control-label">指导评分：</label>
+								<input class="form-control" type="text" name="guideScore" id="guideScore"/>
+							</div>
+							<div class="form-group">
+								<label class="control-label">评阅评分：</label>
+								<input class="form-control" type="text" name="reviewScore" id="reviewScore"/>
+							</div>
+							<div class="form-group">
+								<label class="control-label">答辩评分：</label>
+								<input class="form-control" type="text" name="defenseScore" id="defenseScore"/>
+							</div>
+							<button class="btn btn-primary" type="submit" name="weightSet" id="weightAllSet">全部设置</button>&nbsp;&nbsp;
+							<button class="btn btn-primary" type="submit" name="weightSet" id="weightBatchSet">批量设置</button>				
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<form role="form" action="##" method="post">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="fa fa-check-square-o"></span>&nbsp;&nbsp;评分权重设置
+						</div>
+						<div class="table-responsive">
+							<table class="table table-bordered table-striped table-hover" style="text-align: center;">
+								<thead>
+									<tr>
+										<td>选择</td>
+										<td>专业</td>
+										<td>指导评分</td>
+										<td>评阅评分</td>
+										<td>答辩评分</td>
+										<td>设置</td>
+										<td>取消设置</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" id='checkOne' name='weightCheck'></td>
+										<td>
+											计算机科学与技术
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.5" ></input>
+										</td>
+										<td>
+											<a>设置</a>
+										</td>
+										<td>
+											<a>取消设置</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id='checkTwo' name='weightCheck'></td>
+										<td>
+											数字媒体技术
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.5" ></input>
+										</td>
+										<td>
+											<a>设置</a>
+										</td>
+										<td>
+											<a>取消设置</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id='checkThree' name='weightCheck'></td>
+										<td>
+											网络工程
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.5" ></input>
+										</td>
+										<td>
+											<a>设置</a>
+										</td>
+										<td>
+											<a>取消设置</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id='checkFour' name='weightCheck'></td>
+										<td>
+											物联网
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.25" ></input>
+										</td>
+										<td>
+											<input class="form-control input-sm" type="text" placeholder="0.5" ></input>
+										</td>
+										<td>
+											<a>设置</a>
+										</td>
+										<td>
+											<a>取消设置</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							
+						</div>
+						<div class="panel-footer">
+							<button class="btn btn-primary" type="submit">批量取消</button>&nbsp;&nbsp;
+							<button class="btn btn-primary" type="submit">全部取消</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>

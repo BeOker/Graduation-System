@@ -38,6 +38,9 @@
 					<!--顶栏右侧内容-->
 					<div id="navbar" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a ui-sref="homePage"><span class="glyphicon glyphicon-home"></span>&nbsp;返回主页</a>
+							</li>
 							<!--姓名-->
 							<li>
 								<a><span class="glyphicon glyphicon-user"></span>&nbsp;张三</a>
@@ -68,47 +71,47 @@
 							</a>
 							<ul aria-expanded="false" class="collapse">
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="applyForTeacher">
 										<span class="fa fa-tag"></span>&nbsp;申请指导老师
 									</a>
 								</li
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="applyForProject">
 										<span class="fa fa-tag"></span>&nbsp;课题申报
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;提交任务书
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;提交开题报告
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;提交中期检查
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;提交论文初稿
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;提交论文定稿
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="checkDefendInfo">
 										<span class="fa fa-tag"></span>&nbsp;查看答辩安排
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="checkScore">
 										<span class="fa fa-tag"></span>&nbsp;查询最终成绩
 									</a>
 								</li>
@@ -118,32 +121,32 @@
 							<a href="Javascript: void(0)" aria-expanded="false"><span class="fa fa-wrench fa-lg"></span></span>&nbsp;<span class="sidebar-nav-item">特殊情况处理</span><span class="fa arrow"></span></a>
 							<ul aria-expanded="false" class="collapse">
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="applyForProject">
 										<span class="fa fa-tag"></span>&nbsp;已审课题重申报
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;任务书重提交
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;开题报告重提交
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;中期报告重提交
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;论文初稿重提交
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="submit">
 										<span class="fa fa-tag"></span>&nbsp;论文定稿重提交
 									</a>
 								</li>
@@ -153,12 +156,12 @@
 							<a href="Javascript: void(0)" aria-expanded="false"><span class="fa fa-key fa-lg"></span></span>&nbsp;<span class="sidebar-nav-item">账号管理</span> <span class="fa arrow"></span></a>
 							<ul aria-expanded="false" class="collapse">
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="modify_pwd">
 										<span class="fa fa-tag"></span>&nbsp;修改密码
 									</a>
 								</li>
 								<li >
-									<a ui-sref="top1">
+									<a ui-sref="modify_per_info">
 										<span class="fa fa-tag"></span>&nbsp;修改个人信息
 									</a>
 								</li>
@@ -180,21 +183,21 @@
 		<!--jQuery库CDN-->
 		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
 		<!--Angular.js库-->
+		<script type="text/javascript" src="../js/UIRouter.js"></script>
+		<!--AngularJS 配置-->
 		<script src="http://apps.bdimg.com/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 		<!--UI router库-->
         <script src="../js/pace.min.js"></script>
         <!--进度条效果-->
 		<script type="text/javascript" src="../js/scrolltopcontrol.js"></script>
 		<!--平滑滚动回顶部效果-->
+		<script type="text/javascript" src="../js/metisMenu.min.js"></script>
+		<!--左侧菜单js-->
 		<script type="text/javascript" src="../js/homepage.js"></script>
 		<!--[if lt IE 9]>
         <script src="../js/html5shiv.min.js"></script>
         <script src="../js/respond.min.js"></script>
         <![endif]-->
-		<script type="text/javascript" src="../js/metisMenu.min.js"></script>
-		<!--左侧菜单js-->
-		<script type="text/javascript" src="../js/UIRouter.js"></script>
-		<!--AngularJS 配置-->
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 		<!--bootstrap js插件-->
 	</body>
