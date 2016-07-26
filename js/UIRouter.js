@@ -2,12 +2,12 @@ var myApp = angular.module("myApp", ['ui.router']);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.when("", "/homePage");
+	$urlRouterProvider.when("", "/");
 
 	$stateProvider
 		.state("modify_pwd", {
 			url: "/modify_pwd",
-			templateUrl: "../Public_Page/modify_pwd.html"
+			templateUrl: "../Public_Page/modify_pwd3.html"
 		})
 		.state("modify_per_info", {
 			url: "/modify_per_info",
@@ -113,9 +113,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			url: "/stu_task_info",
 			templateUrl: "stu_task_info.html"
 		})
-		.state("opening_report_info", {
-			url: "/opening_report_info",
-			templateUrl: "opening_report_info.html"
+		.state("opening_report", {
+			url: "/opening_report",
+			templateUrl: "opening_report.html"
 		})
 		.state("stu_score_pool", {
 			url: "/stu_score_pool",
@@ -125,131 +125,4 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 			url: "/arr_but_secretary",
 			templateUrl: "arr_but_secretary.html"
 		})
-		.state("homePage", {
-	            url: "/homePage",
-	            templateUrl: "../Public_Page/homePage.html"
-	        })
-	        .state("applyForTeacher", {
-	            url: "/applyForTeacher",
-	            templateUrl: "applyForTeacher.html"
-	        })
-	        .state("applyForProject", {
-	            url:"/applyForProject",
-	            templateUrl: "applyForProject.html"
-	        })
-	        .state("submit", {
-	            url:"/submit",
-	            templateUrl: "submit.html"
-
-	        }) 
-	        .state("checkDefendInfo", {
-	            url:"/checkDefendInfo",
-	            templateUrl: "checkDefendInfo.html"
-
-	        })
-	        .state("checkScore", {
-	            url:"/checkScore",
-	            templateUrl: "checkScore.html"
-
-	        })
-	        .state("scoreSummary", {
-	            url:"/scoreSummary",
-	            templateUrl: "scoreSummary.html"
-
-	        })
-	        .state("scoreGrade", {
-	            url:"/scoreGrade",
-	            templateUrl: "scoreGrade.html"
-
-	        })
-	        .state("recommendTeacher", {
-	            url:"/recommendTeacher",
-	            templateUrl: "recommendTeacher.html"
-
-	        })
-	        .state("recommendThesis", {
-	            url:"/recommendThesis",
-	            templateUrl: "recommendThesis.html"
-
-	        })
-	        .state("spotChecks", {
-	            url:"/spotChecks",
-	            templateUrl: "spotChecks.html"
-
-	        })
-	        .state("studentInfo", {
-	            url:"/studentInfo",
-	            templateUrl: "studentInfo.html"
-
-	        })
-	        .state("dutyBookInfo", {
-	            url:"/dutyBookInfo",
-	            templateUrl: "dutyBookInfo.html"
-
-	        })
-	        .state("openReportInfo", {
-	            url:"/openReportInfo",
-	            templateUrl: "openReportInfo.html"
-
-	        })
-	        .state("midCheckInfo", {
-	            url:"/midCheckInfo",
-	            templateUrl: "midCheckInfo.html"
-
-	        })
-	        .state("thesisInfo", {
-	            url:"/thesisInfo",
-	            templateUrl: "thesisInfo.html"
-
-	        })
-	        .state("defendGroupInfo", {
-	            url:"/defendGroupInfo",
-	            templateUrl: "defendGroupInfo.html"
-
-	        })
-	        .state("termSet", {
-	            url:"/termSet",
-	            templateUrl: "termSet.html"
-
-	        })
-	        .state("fileData", {
-	            url:"/fileData",
-	            templateUrl: "fileData.html"
-
-	        })
-	        .state("closingDate", {
-	            url:"/closingDate",
-	            templateUrl: "closingDate.html"
-
-	        })
-	        .state("weightSet", {
-	            url:"/weightSet",
-	            templateUrl: "weightSet.html"
-
-	        })
-	        .state("closeSystem", {
-	            url:"/closeSystem",
-	            templateUrl: "closeSystem.html"
-
-	        })
-	        .state("studentAccount", {
-	            url:"/studentAccount",
-	            templateUrl: "studentAccount.html"
-
-	        })
-	        .state("guideTeacherAccount", {
-	            url:"/guideTeacherAccount",
-	            templateUrl: "guideTeacherAccount.html"
-
-	        })
-	        .state("secretaryAccount", {
-	            url:"/secretaryAccount",
-	            templateUrl: "secretaryAccount.html"
-
-	        })
-	        .state("directorAccount", {
-	            url:"/directorAccount",
-	            templateUrl: "directorAccount.html"
-
-	        })
 });
